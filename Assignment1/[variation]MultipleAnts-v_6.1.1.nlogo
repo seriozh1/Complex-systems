@@ -54,11 +54,15 @@ to restart
     let average-ticks (cumulative-ticks / repeat-N)
     set list-ticks lput average-ticks list-ticks
 
-    print (word "Average ticks for " repeat-N " runs: " average-ticks)
+    ; print (word "Average ticks for " repeat-N " runs: " average-ticks)
 
     set cumulative-ticks 0
-    set run-count 0
+    ; set run-count 0
   ]
+  if run-count = 1000 [
+    print list-ticks
+  ]
+
 end
 
 to go
