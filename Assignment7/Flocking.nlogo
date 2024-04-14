@@ -26,7 +26,7 @@ to go
   ask turtles [ flock ]
   repeat 5 [ ask turtles [ fd 0.2 ] display ]
   check-stability
-  if stable-ticks > 50 [ stop ]  ;; stop if stable for more than 50 ticks
+  if stable-ticks > 20 [ stop ]
   tick
 end
 
